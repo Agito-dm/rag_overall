@@ -13,3 +13,13 @@
 | 7 | Единый CLI, демонстрация и аудит ТЗ | Минимум пять демо-вопросов, примеры ответов с источниками и запуск из чистого клона |
 
 В финальном smoke test проверяем установку, наличие документов, запуск Weaviate, создание embeddings и индекса, тесты и работу CLI.
+
+## Прогресс
+
+- [x] День 1 — Document Loading & Preprocessing
+- [x] День 2 — Chunking & Metadata
+- [ ] День 3 — Weaviate & Embeddings
+- [ ] День 4 — Semantic Retrieval
+- [ ] День 5 — Grounded Generation
+- [ ] День 6 — Retrieval Quality & Guardrails
+- [ ] День 7 — Integration & Final Audit
