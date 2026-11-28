@@ -7,7 +7,12 @@ name = "rag-overall"
 version = "0.1.0"
 description = "Educational RAG pipeline with Weaviate"
 requires-python = ">=3.12,<3.13"
-dependencies = ["pydantic>=2,<3"]
+dependencies = [
+    "pydantic>=2,<3",
+    "weaviate-client>=4.23,<4.24",
+    "google-genai>=2,<3",
+    "python-dotenv>=1,<2",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
@@ -17,7 +22,10 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = ["--import-mode=importlib"]
+addopts = ["--import-mode=importlib", "-m", "not integration"]
+markers = [
+    "integration: tests requiring external services",
+]
 
 [tool.ruff]
 target-version = "py312"

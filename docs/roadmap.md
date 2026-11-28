@@ -18,7 +18,7 @@
 
 - [x] День 1 — Document Loading & Preprocessing
 - [x] День 2 — Chunking & Metadata
-- [ ] День 3 — Weaviate & Embeddings
+- [x] День 3 — Weaviate & Embeddings
 - [ ] День 4 — Semantic Retrieval
 - [ ] День 5 — Grounded Generation
 - [ ] День 6 — Retrieval Quality & Guardrails
